@@ -1,0 +1,9 @@
+l=[1,7,4,32,677,76]
+print(l)
+l.sort()
+print(l)
+t1=tuple(l)
+print(t1)
+l2=list(t1)
+l2[4]=69
+print(l2)
