@@ -1,0 +1,25 @@
+def is_palindrome(string):
+    # Remove spaces and convert to lowercase for case-insensitive comparison
+    cleaned_string = ''.join(string.split()).lower()
+    
+    # Compare the cleaned string with its reverse
+    return cleaned_string == cleaned_string[::-1]
+
+def reverse_string(string):
+    # Reverse the input string
+    return string[::-1]
+
+# Input string
+input_string = input("Enter a string: ")
+
+# Reverse the string
+reversed_string = reverse_string(input_string)
+
+# Check if it's a palindrome
+if is_palindrome(input_string):
+    print(f"'{input_string}' is a palindrome.")
+else:
+    print(f"'{input_string}' is not a palindrome.")
+
+print(f"Reversed string: {reversed_string}")
+
